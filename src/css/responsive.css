@@ -1,0 +1,77 @@
+@media(max-width:790px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    background: url(../images/bg-mobile.svg) no-repeat;
+    background-size: cover;
+    padding: 6.5rem 6.6rem;
+  }
+
+  .header {
+    margin-bottom: 12rem;  
+  }
+
+  .header img {
+    max-width: 25.5rem;
+  }
+
+  .main {
+  flex-direction: column;
+  gap: 11.5rem;
+  padding-bottom: 9rem;
+  }
+
+  .main .col-a img {
+  width: 95.9%;
+  }
+
+  .main .col-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main .col-b h1 {
+    font-size: 4.9rem;
+  }
+
+  .main .col-b p {
+    font-size: 2.9rem;
+    line-height: 1.7;
+    margin-bottom: 6rem;
+  }
+
+  .main .col-b a.button {
+    font-size: 2.5rem;
+    padding: 2.5rem 10rem;
+  }
+
+  footer {
+  position: initial;
+  padding-bottom: 4rem;
+  }
+
+  footer .redes {
+    justify-content: center;
+    gap: 3rem;
+  }
+  footer .redes .fa-facebook-f {
+    font-size: 2.8rem;
+    border-radius: 2.8rem;
+    padding: 1.2rem 1.8rem;
+  }
+  
+  footer .redes .fa-twitter {
+    font-size: 2.8rem;
+    border-radius: 2.8rem;
+    padding: 1.2rem;  
+  }
+  
+  footer .redes .fa-instagram {
+    font-size: 2.8rem;
+    border-radius: 2.8rem;
+    padding: 1.2rem;  
+  }
+}
