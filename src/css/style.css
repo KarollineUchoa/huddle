@@ -1,91 +1,81 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   background-color: var(--primary-color);
   color: var(--text-color);
   font-family: 'Poppins', sans-serif;   
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh; 
 }
 
 .container {
   width: 100%;
-  height: 100%;
-  text-align: center;
+  height: 100vh;
   padding: 5.3rem 7.2rem;
   background: url(../images/bg-desktop.svg) no-repeat;
   background-size: cover;
 }
 
 .header {
-  display: flex;
   text-align: left;
   margin-bottom: 10rem;  
 }
 
 .header img {
-  max-width: 21.2rem;
+  width: 21.2rem;
 }
 
 .main {
+  max-width: 1440px;
   display: flex;
-  text-align: left;
-  justify-content: center;
-  width: 100%;
+  align-items:flex-start;
   gap: 5.6rem;
-  margin-bottom: 6rem;
+  margin: 0 auto 6rem;
 }
 
-.main .col-a {
-  width: 100%;
-}
-
-.main .col-a img {
-  width: 50vw;
-}
-
-.main .col-b {
+.main .main-col-b {
   width: 100%;
   display: flex; 
   flex-direction: column;
-  justify-content: center;
+  margin-top: 4rem;
+  margin-right: 4rem;
 }
 
-.main .col-b h1 {
+.main .main-col-b h1 {
   font-weight: 600;
   font-size: 3.9rem;
   margin-bottom: 2.2rem;
 }
 
-.main .col-b p {
+.main .main-col-b p {
   font-size: 1.7rem;
   margin-bottom: 3.9rem;
+  min-width: 290px;
 }
 
-.main .col-b .btn {
+.main .main-col-b .btn {
   display: inline-block;
 }
 
-.main .col-b .btn a.button {
+.main .main-col-b .btn a.button {
   font-size: 1.8rem;
   color: var(--primary-color);
   background-color: var(--text-color);
   padding: 1.5rem 6.3rem;
   border-radius: 5rem;
   margin-bottom: 12.5rem;
+  box-shadow: 1px -1px 20px 5px hsla(258, 41%, 31%);
 }
 
-.main .col-b .btn a.button:hover {
+.main .main-col-b .btn a.button:hover {
   background-color: var(--hover-color);
   color: var(--text-color);
-  transition: .3s ease-in-out;  
+  transition: .3s ease-in-out;
 }
 
 footer {
-  position: absolute;
-  bottom: 6%;
-  right: 2%;
+  margin: 0;
 }
 
 footer .redes {
@@ -94,25 +84,16 @@ footer .redes {
   gap: 2rem;
 }
 
+footer .redes .fa-twitter, footer .redes .fa-instagram, footer .redes .fa-facebook-f {
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  font-size: 1.9rem;
+  border-radius: 2.8rem;
+  padding: 1rem;  
+}
+
 footer .redes .fa-facebook-f {
-  border: 1px solid var(--text-color);
-  font-size: 1.9rem;
-  border-radius: 2.8rem;
   padding: 1rem 1.3rem;
-}
-
-footer .redes .fa-twitter {
-  border: 1px solid var(--text-color);
-  font-size: 1.9rem;
-  border-radius: 2.8rem;
-  padding: 1rem;  
-}
-
-footer .redes .fa-instagram {
-  border: 1px solid var(--text-color);
-  font-size: 1.9rem;
-  border-radius: 2.8rem;
-  padding: 1rem;  
 }
 
 footer .redes .fa-facebook-f:hover,

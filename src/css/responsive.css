@@ -1,29 +1,28 @@
-@media(max-width:790px) {
-  body {
-    overflow-x: hidden;
-  }
-  .container {
+@media(max-width:1134px) {
+   .container {
     background: url(../images/bg-mobile.svg) no-repeat;
     background-size: cover;
-    padding: 6.5rem 6.6rem;
+    padding: 5rem;
   }
 
   .header {
-    margin-bottom: 12rem;  
+    margin-bottom: 7rem;  
   }
 
   .header img {
-    max-width: 25.5rem;
+    min-width: 20.5rem;
   }
 
   .main {
-  flex-direction: column;
-  gap: 11.5rem;
-  padding-bottom: 9rem;
+    max-width: 790px;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    padding-bottom: 5rem;
   }
 
-  .main .col-a img {
-  width: 95.9%;
+  .main .main-col-a img {
+    width: 80vw;
   }
 
   .main .col-b {
@@ -41,6 +40,7 @@
     font-size: 2.9rem;
     line-height: 1.7;
     margin-bottom: 6rem;
+    margin-right: 0;
   }
 
   .main .col-b a.button {
@@ -73,5 +73,15 @@
     font-size: 2.8rem;
     border-radius: 2.8rem;
     padding: 1.2rem;  
+  }
+}
+
+@media(max-width:425px) {
+  .main .col-b h1 {
+    font-size: 2.5rem;
+  }
+
+  .main .col-b p {
+    font-size: 1rem;
   }
 }
